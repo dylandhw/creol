@@ -144,10 +144,18 @@
     
 .nav-scrollable {
     display: none;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .navbar-toggler:checked ~ .nav-scrollable {
     display: block;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 @media (min-width: 641px) {
