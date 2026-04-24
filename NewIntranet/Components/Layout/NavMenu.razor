@@ -1,6 +1,11 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">NewIntranet</a>
+        <a class="navbar-brand" href="">
+            <span>
+                <strong>CREOL | Intranet</strong><br />
+                <span class="subtitle">College of Optics &amp; Photonics</span>
+            </span>
+        </a>
     </div>
 </div>
 
@@ -8,22 +13,32 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
+        <!-- My Info Section -->
+        <div class="nav-section">
+            <div class="nav-section-title">My Info</div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="">Directory Info</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="publications">Publications</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="keys">Keys</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="computers">Computers</NavLink></div>
         </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
+        <!-- Favorites Section -->
+        <div class="nav-section">
+            <div class="nav-section-title">Favorites</div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="by-semester">By Semester</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="courses">Courses</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="license-usages">License Usages</NavLink></div>
+            <div class="nav-item px-3"><NavLink class="nav-link" href="journals">Journals</NavLink></div>
         </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
+        <!-- Help Section -->
+        <div class="nav-section nav-section-help">
+            <div class="nav-section-title">Need help navigating the intranet?</div>
+            <div class="nav-help-contact">
+                Contact the<br />
+                Web Developer:<br />
+                <a href="mailto:dylan.wilkins@ucf.edu">dylan.wilkins@ucf.edu</a>
+            </div>
         </div>
     </nav>
 </div>

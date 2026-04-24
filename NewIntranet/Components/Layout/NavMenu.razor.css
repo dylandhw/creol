@@ -20,8 +20,17 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+
 .navbar-brand {
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    color: #ffd600;
+    font-size: 0.95rem;
+    font-weight: 400;
 }
 
 .bi {
@@ -71,6 +80,58 @@
         width: 100%;
     }
 
+/* Section styling with separators */
+
+.nav-section {
+    margin-bottom: 0.5rem;
+}
+
+.nav-section:not(:last-of-type) {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.nav-section-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.nav-section-help .nav-section-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.nav-help-contact {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.nav-help-contact a {
+    color: #ffd600;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.nav-item .nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.2rem 0;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    color: #ffd600;
+    background: none;
+    text-decoration: underline;
+}
+
 .nav-item ::deep a.active {
     background-color: rgba(255,255,255,0.37);
     color: white;
@@ -80,7 +141,7 @@
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
-
+    
 .nav-scrollable {
     display: none;
 }
