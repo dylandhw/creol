@@ -73,8 +73,9 @@ h1:focus {
 }
 
 .card-header {
-    padding: 25PX;
+    padding: 15PX;
     font-weight: bold;
+    font-size: xx-large;
     background: #ffd100;
 }
 
