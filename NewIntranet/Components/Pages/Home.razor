@@ -2,6 +2,161 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="home-container">
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="Recents" Links="quickLinks" />
+        </div>
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="Academics" Links="resources" />
+        </div>
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="Operations" Links="tools" />
+        </div>
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="IT & Services" Links="news" />
+        </div>
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="Research" Links="events" />
+        </div>
+        <div class="col-12 col-md-4">
+            <ScrollableLinksCard Title="Reports and Administration" Links="support" />
+        </div>
+    </div>
+</div>
 
-Welcome to your new app.
+@code {
+    private List<LinkItem> quickLinks = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+
+    private List<LinkItem> resources = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+
+    private List<LinkItem> tools = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+
+    private List<LinkItem> news = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+
+    private List<LinkItem> events = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+
+    private List<LinkItem> support = new()
+    {
+        new LinkItem { Title = "UCF Portal", Url = "https://my.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Email", Url = "https://outlook.office.com", IsFavorite = false },
+        new LinkItem { Title = "Canvas", Url = "https://canvas.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Library", Url = "https://library.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Research", Url = "https://research.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "IT Services", Url = "https://it.ucf.edu", IsFavorite = false },
+        new LinkItem { Title = "Teams", Url = "https://teams.microsoft.com", IsFavorite = false },
+        new LinkItem { Title = "OneDrive", Url = "https://onedrive.live.com", IsFavorite = false },
+        new LinkItem { Title = "SharePoint", Url = "https://sharepoint.com", IsFavorite = false },
+        new LinkItem { Title = "Latest News", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Announcements", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Updates", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Calendar", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Seminars", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Workshops", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Help Desk", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "FAQ", Url = "#", IsFavorite = false },
+        new LinkItem { Title = "Contact Us", Url = "#", IsFavorite = false },
+    };
+}

@@ -62,3 +62,77 @@ h1:focus {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+
+/* SCROLLABLE CARD COMPONENT STYLING */
+
+.card {
+    width: 320px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.card-header {
+    padding: 25PX;
+    font-weight: bold;
+    background: #ffd100;
+}
+
+.scrollable {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.link-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+    color: #888;
+    transition: color 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.link-row:hover .favorite-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.favorite-btn.favorited {
+    opacity: 1;
+    visibility: visible;
+    color: #ff0000;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+}
+
+/* HOME PAGE GRID LAYOUT */
+.home-container {
+    padding: 1rem;
+}
+
+.home-container .row {
+    margin-bottom: 1.5rem;
+}
+
+.home-container .col {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .col .card {
+    width: 100%;
+    max-width: 320px;
+}
